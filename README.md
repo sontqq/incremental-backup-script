@@ -1,24 +1,24 @@
 # Incremental Backup Script
 
 # Features
-The script uses compression to save space.
-Multithreaded compression to make it done faster.
-The script runs with idle io piority and low process priority so it doesn't stress the computer too much.
+The script uses compression to save space. <br />
+Multithreaded compression to make it done faster. <br />
+The script runs with idle io piority and low process priority so it doesn't stress the computer too much. <br />
 
 # How to use
-git clone https://github.com/sontqq/incremental-backup-script.git
-cd incremental-backup-script
-cp backupnow /usr/bin/backupnow
-chmod +x /usr/bin/backupnow
+git clone https://github.com/sontqq/incremental-backup-script.git <br />
+cd incremental-backup-script <br />
+cp backupnow /usr/bin/backupnow <br />
+chmod +x /usr/bin/backupnow <br />
 
-Command to run the script: "backupnow" from any directory
+Command to run the script: "backupnow" from any directory <br />
 
 # Required packages
-apt-get install pigz
-apt-get install ionice
-apt-get install nice
+apt-get install pigz <br />
+apt-get install ionice <br />
+apt-get install nice <br />
 
 # More features to come
-- Supporting parameters
-- Optional compression with strength
-- Optional background priority (cpu, hdd)
+- Supporting parameters <br />
+- Optional compression with strength <br />
+- Optional background priority (cpu, hdd) <br />
