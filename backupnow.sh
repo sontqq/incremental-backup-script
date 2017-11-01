@@ -1,4 +1,5 @@
 #!/bin/sh
+
 # This script is created by: sontqq @ github
 # Feel free to use or share
 
@@ -11,10 +12,13 @@ DESTINATION='/media/pi/SONT/backups/'
 # The incremental file name
 INCREMENTALFILE='snapshot.list'
 
+# Change to the right directory
+cd $DESTINATION
+
 # The command itself
 nice -n 19 ionice -c2 -n7 tar --listed-incremental=$DESTINATION$INCREMENTALFILE -cf - $SOURCE \
 
-# Directories to exclude (don't remove, only add new line)
+# Directories to exclude (remove only if you know what you are doing. or add new lines only)
 --exclude=/proc \
 --exclude=/sys \
 --exclude=/tmp \
